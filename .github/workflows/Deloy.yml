@@ -17,6 +17,8 @@ jobs:
   deploy:
     runs-on: self-hosted # Sử dụng runner tự host
 
+    needs: ci
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
