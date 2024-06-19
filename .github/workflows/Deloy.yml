@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main # Thay thế bằng tên nhánh mà bạn muốn trigger CI/CD (ví dụ: main, master)
-
+  pull_request:
+    branches: ["main"]
 jobs:
   ci:
     runs-on: ubuntu-latest
