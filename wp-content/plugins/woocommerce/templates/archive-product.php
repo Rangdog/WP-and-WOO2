@@ -27,9 +27,6 @@ get_header( 'shop' );
  * @hooked WC_Structured_Data::generate_website_data() - 30
  */
 do_action( 'woocommerce_before_main_content' );
-if ( is_shop() ) {
-    echo '<h1 class="woocommerce-products-header__title page-title">My Custom Shop Title</h1>';
-}
 /**
  * Hook: woocommerce_shop_loop_header.
  *
